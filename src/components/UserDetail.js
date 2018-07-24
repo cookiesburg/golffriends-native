@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
-import { View, Text } from 'react-native';
+import { Text } from 'react-native';
+import Card from './Card';
+import CardSection from './CardSection';
+
 
 const UserDetail = (props) => {
   return(
-      <View >
-        <Text>{props.user.name}</Text>
-      </View>
+      <Card>
+        <CardSection>
+          <Text>{props.user.name}</Text>
+        </CardSection>
+      </Card>
     );
 }
 
